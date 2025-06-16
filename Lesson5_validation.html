@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="regForm">
+      <input type="text" id="name" minlength="3" required placeholder="Имя" />
+      <input type="email" id="email" required placeholder="Email" />
+      <input
+        type="password"
+        id="password"
+        pattern="^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[A-Z]).{8,}$"
+        title="Пароль: 8+ символов, цифра и спецзнак"
+        required
+        placeholder="Пароль"
+      />
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </body>
+</html>
